@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammed Mahmood | Portfolio</title>
+  <style>
+    :root {
+      --bg: #0d0d0d;
+      --text: #ffffff;
+      --neon: #00ffe7;
+      --accent: #ff4081;
+      --card-bg: rgba(255, 255, 255, 0.05);
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Times New Roman', serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background: #1a1a1a;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: var(--neon);
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      background: linear-gradient(to right, #430089, #82ffa1);
+      text-align: center;
+      padding: 5rem 2rem;
+      color: white;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero p {
+      font-size: 1.4rem;
+      opacity: 0.9;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 3rem 1rem;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--neon);
+      border-radius: 15px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 0 20px var(--accent);
+      animation: fadeInUp 1s ease;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      list-style-type: circle;
+      padding-left: 1.5rem;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      nav a {
+        margin: 0.5rem 0;
+      }
+
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#about">💡 About</a>
+    <a href="#education">🎓 Education</a>
+    <a href="#courses">📘 Courses</a>
+    <a href="#certifications">🏅 Certifications</a>
+    <a href="#internship">🧑‍💻 Internship</a>
+    <a href="#projects">🧠 Projects</a>
+    <a href="#contact">📞 Contact</a>
+  </nav>
+
+  <section class="hero">
+    <h1>Hi, I'm Mohammed Mahmood</h1>
+    <p>Cloud & Data Enthusiast | IT Professional | Lifelong Learner</p>
+  </section>
+
+  <section id="about">
+    <div class="card">
+      <h2>💡 About Me</h2>
+      <p>A passionate IT professional with expertise in Python, Java, AWS, and Power BI. Always eager to learn and collaborate.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="card">
+      <h2>🎓 Education</h2>
+      <ul>
+        <li>B.Tech – Guru Nanak Institutions</li>
+        <li>Intermediate – Telangana State Board</li>
+        <li>Secondary – Nalgonda Public School (CBSE)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="courses">
+    <div class="card">
+      <h2>📘 Courses</h2>
+      <ul>
+        <li>Python Programming</li>
+        <li>Power BI</li>
+        <li>HTML & CSS</li>
+        <li>AWS Fundamentals</li>
+        <li>Core Java</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="certifications">
+    <div class="card">
+      <h2>🏅 Certifications</h2>
+      <ul>
+        <li>HTML – Great Learning</li>
+        <li>CSS – Great Learning</li>
+        <li>AWS APAC – AWS Forage</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="internship">
+    <div class="card">
+      <h2>🧑‍💻 Internship</h2>
+      <ul>
+        <li>Data Analysis Intern at Cognifyz Technologies</li>
+        <li>Handled EDA and Power BI reporting</li>
+        <li>Python automation and data wrangling</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="card">
+      <h2>🧠 Projects</h2>
+      <ul>
+        <li>Urban Planning Dashboard</li>
+        <li>Smart city data visualizer using cloud + maps</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>📞 Contact</h2>
+      <p>Email: <a href="mailto:md.mahmood00001@gmail.com">md.mahmood00001@gmail.com</a></p>
+      <p>Phone: 6281240097</p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/mohammed-mahmood17" target="_blank">mohammed-mahmood17</a></p>
+    </div>
+  </section>
+
+  
+
+</body>
+</html>
